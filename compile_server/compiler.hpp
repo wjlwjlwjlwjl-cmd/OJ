@@ -1,3 +1,4 @@
+#pragma once
 #include "../comm/utils.hpp"
 #include "../comm/Logger.hpp"
 
@@ -18,22 +19,24 @@ public:
         if((pid = fork()) < 0)
         {
             ERROR("copiler's sub process fail");
-            exit(1);
+            return false;
         }
         else if(pid == 0)
         {
             std::string src_file = oj_utils::name_utils::Src(filename);
             std::string exe_file = oj_utils::name_utils::Exe(filename);
-            std::string err_file = oj_utils::name_utils::Error(filename);
+            std::string err_file = oj_utils::name_utils::CompileError(filename);
 
+            umask(0); // avoid the influence of the platform
             int errfd = open(err_file.c_str(), O_CREAT | O_WRONLY, 0644);
             if(errfd < 0)
             {
                 ERROR("errfile generate fail");
-                exit(1);
+                return false;
             }
             dup2(errfd, 2);
             execlp("g++", "g++", src_file.c_str(), "-o", exe_file.c_str(), "-std=c++11", nullptr);
+            close(errfd);
         }
         else
         {
@@ -46,5 +49,4 @@ public:
         }
         return false;
     }
-private:
 };

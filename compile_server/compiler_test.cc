@@ -1,4 +1,5 @@
 #include "compiler.hpp"
+#include "runner.hpp"
 
 int main()
 {
@@ -13,15 +14,14 @@ int main()
     {
         std::cout << "compile error" << std::endl;
     }
-
-    filename = "bad";
-    if(cp.compile(filename))
+    Runner rn;
+    if(!rn.run(filename))
     {
-        std::cout << "compile success" << std::endl;
+        std::cout << "run success" << std::endl;
     }
     else
     {
-        std::cout << "compile error" << std::endl;
+        std::cout << "run end with error" << std::endl;
     }
     return 0;
 }
