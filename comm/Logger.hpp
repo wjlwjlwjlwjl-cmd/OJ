@@ -9,9 +9,8 @@ std::shared_ptr<spdlog::logger> default_logger;
 
 void init_logger()
 {
-    default_logger = std::make_shared<spdlog::logger>("default_logger");    
+    default_logger = spdlog::stdout_color_mt("default_logger");
     default_logger->set_level(spdlog::level::level_enum::trace);
     default_logger->flush_on(spdlog::level::level_enum::trace);
     default_logger->set_pattern("[%n][%H:%M:%S][%t][%-8l] %v");
-    default_logger->debug("{}", "{}", "hello", "hello");
 }

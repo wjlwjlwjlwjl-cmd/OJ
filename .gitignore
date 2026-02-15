@@ -1,0 +1,6 @@
+a.out
+*.error
+*.exe
+cp
+tmp
+.vscode

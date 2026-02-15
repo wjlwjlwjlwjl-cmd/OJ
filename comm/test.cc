@@ -1,10 +1,8 @@
 #include <iostream>
-#include "Logger.hpp"
+#include <unistd.h>
+#include <sys/types.h>
 int main()
 {
-    init_logger();
-    DEBUG("{}", "hello");
-
-    std::cout << "1";
+    execlp("g++", "g++","test.cc", "-o", "test.exe", "--std=c++11", nullptr);
     return 0;
 }
