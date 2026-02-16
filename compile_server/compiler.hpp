@@ -15,8 +15,13 @@ public:
     ~Compiler()
     {}
 
-    bool compile(std::string filename)
+    static bool compile(std::string filename)
     {
+        std::string src_file = oj_utils::name_utils::Src(filename);
+        std::string exe_file = oj_utils::name_utils::Exe(filename);
+        std::string err_file = oj_utils::name_utils::CompileError(filename);
+        int errfd = open(err_file.c_str(), O_CREAT | O_WRONLY, 0644);
+
         pid_t pid;
         if((pid = fork()) < 0)
         {
@@ -25,20 +30,16 @@ public:
         }
         else if(pid == 0)
         {
-            std::string src_file = oj_utils::name_utils::Src(filename);
-            std::string exe_file = oj_utils::name_utils::Exe(filename);
-            std::string err_file = oj_utils::name_utils::CompileError(filename);
-
             umask(0); // avoid the influence of the platform
-            int errfd = open(err_file.c_str(), O_CREAT | O_WRONLY, 0644);
             if(errfd < 0)
             {
-                ERROR("errfile generate fail");
+                ERROR("errfile generate fail {}", filename);
                 return false;
             }
             dup2(errfd, 2);
             execlp("g++", "g++", src_file.c_str(), "-o", exe_file.c_str(), "-std=c++11", nullptr);
             close(errfd);
+            exit(1);
         }
         else
         {
@@ -48,6 +49,7 @@ public:
             {
                 return true;
             }
+            close(errfd);
         }
         return false;
     }

@@ -12,7 +12,7 @@ public:
     ~Runner()
     {}
 
-    int run(const std::string& filename, int cpu_limit, int mem_limit)
+    static int run(const std::string& filename, int cpu_limit, int mem_limit)
     {
         std::string exe_file = oj_utils::name_utils::Exe(filename);
         if(!oj_utils::file_utils::cp_success(exe_file))
@@ -52,7 +52,7 @@ public:
             close(stdinfd);
             close(stdoutfd);
             close(stderrfd);
-            return -1;
+            exit(1);
         }
         else
         {

@@ -10,6 +10,7 @@
  * stdout: result of the program
  * stderr: error infomation generated while running 
  * d************/
+#pragma once
 #include "compiler.hpp"
 #include "runner.hpp"
 
@@ -18,23 +19,52 @@
 class CompileAndRun
 {
 private:
-    static std::string ParseStatus(int status)
+    static std::string ParseStatus(int status, std::string& filename)
     {
-
+        std::string reason;
+        std::string message;
+        switch(status)
+        {
+        case 0:
+            reason = "all normal";
+            break;
+        case 1:
+            oj_utils::file_utils::read_file(oj_utils::name_utils::CompileError(filename), message, true);
+            reason = "compile error: " + message;
+            break;
+        case 2:
+            oj_utils::file_utils::read_file(oj_utils::name_utils::RunError(filename), message, true);
+            if(message.empty())
+            {
+                message = "Segmentation fault (core dumped)";
+            }
+            reason = "run error: " + message;
+            break;
+        case -1:
+            reason = "write into src fail";
+            break;
+        case -2:
+            reason = "read stdout or stderr fail";
+            break;
+        default:
+            reason = "Unknown error";
+        }
+        return reason;
     }
 public:
-    static void compile_and_run(const std::string& in_json, std::string& out_json)
+    static void compile_and_run(const std::string& in_string, std::string& out_string)
     {
         Json::Value val; 
         Json::Reader reader;
-        reader.parse(in_json, val);
+        reader.parse(in_string, val);
+        Json::Value out_json;
 
         std::string code = val["code"].asString();
         std::string input = val["input"].asString();
         int cpu_limit = val["cpu_limit"].asInt();
         int mem_limit = val["mem_limit"].asInt();
 
-        int status;
+        int status = 0;
         std::string reason;
         std::string stdout;
         std::string stderr;
@@ -45,26 +75,30 @@ public:
             status = -1;
             goto END;
         }
-        if(!compiler.compile(filename))
+        if(!Compiler::compile(filename))
         {
             status = 1;
             goto END;
         }
-        if(!runner.run(filename, cpu_limit, mem_limit))
+        if(Runner::run(filename, cpu_limit, mem_limit) != 0)
         {
             status = 2;
             goto END;
         }
         
-        reason = ParseStatus(status);
         if(!oj_utils::file_utils::read_file(oj_utils::name_utils::Stdout(filename), stdout, true) 
             || !oj_utils::file_utils::read_file(oj_utils::name_utils::RunError(filename), stderr, true))
         {
             status = -2;
         }
     END:
+        reason = ParseStatus(status, filename);
+        out_json["status"] = status; 
+        out_json["reason"] = reason;
+        out_json["stdout"] = stdout;
+        out_json["stderr"] = stderr;
+        Json::StyledWriter writer;
+        out_string = writer.write(out_json);
     }
 private:
-    static Compiler compiler;
-    static Runner runner;
 };
