@@ -16,6 +16,21 @@ namespace oj_utils
             struct stat file_stat;
             return stat(filename.c_str(), &file_stat) == 0;
         }
+
+        static std::string unique_file_name()
+        {
+
+        }
+
+        static bool read_file(const std::string& filename, std::string& buffer, bool keep)
+        {
+
+        }
+
+        static bool write_file(const std::string& target, const std::string content)
+        {
+
+        }
     private:
     };
 
