@@ -81,6 +81,5 @@ private:
         r2.rlim_cur = mem_limit * 1024;
         r2.rlim_max = RLIM_INFINITY;
         setrlimit(RLIMIT_AS, &r2);
-
     }
 };
