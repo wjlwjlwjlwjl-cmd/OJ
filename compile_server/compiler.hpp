@@ -3,6 +3,8 @@
 #include "../comm/Logger.hpp"
 
 #include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/time.h>
 
 class Compiler
 {

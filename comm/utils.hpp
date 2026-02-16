@@ -1,3 +1,4 @@
+#pragma once
 #include <unistd.h>
 #include <pthread.h>
 #include <sys/stat.h>
@@ -9,6 +10,7 @@ namespace oj_utils
     class file_utils
     {
     public:
+        //if the executable file exists, the compile is successful;
         static bool cp_success(const std::string& filename)
         {
             struct stat file_stat;
@@ -20,20 +22,43 @@ namespace oj_utils
     class name_utils
     {
     public:
-        static std::string Src(std::string filename)
+        // ********** files generated during the compile process **********
+        //add the suuffix to the filename
+        static std::string Src(const std::string& filename)
         {
-            return "./code/" + filename += ".cpp";
+            return "./test_code/" + filename + ".cpp";
         }
 
-        static std::string Exe(std::string filename)
+        //give the path and exe's name
+        static std::string Exe(const std::string& filename)
         {
             std::string pathname = "./tmp/" + filename + ".exe";
             return pathname;
         }
 
-        static std::string Error(std::string filename)
+        //give the path and err's name
+        static std::string CompileError(const std::string& filename)
         {
-            std::string pathname = "./tmp/" + filename + ".error";
+            std::string pathname = "./tmp/" + filename + ".compile_error";
+            return pathname;
+        }
+
+        // ********** files generated during the run process **********
+        static std::string Stdin(const std::string& filename)
+        {
+            std::string pathname = "./tmp/" + filename + ".stdin";
+            return pathname;
+        }
+
+        static std::string Stdout(const std::string& filename)
+        {
+            std::string pathname = "./tmp/" + filename + ".stdout";
+            return pathname;
+        }
+
+        static std::string RunError(const std::string& filename)
+        {
+            std::string pathname = "./tmp/" + filename + ".run_error";
             return pathname;
         }
     };

@@ -15,7 +15,7 @@ int main()
         std::cout << "compile error" << std::endl;
     }
     Runner rn;
-    if(!rn.run(filename))
+    if(!rn.run(filename, 6, 1024))
     {
         std::cout << "run success" << std::endl;
     }
