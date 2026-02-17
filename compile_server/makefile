@@ -1,5 +1,5 @@
-cp: compile_server.cc
-	g++ compile_server.cc -o cs -lspdlog -lfmt -ljsoncpp -g
+cp: compiler_test.cc
+	g++ compiler_test.cc -o cs -lspdlog -lfmt -ljsoncpp -g
 .PHONY:clean
 clean:
-	rm -rf cs test_code/* tmp/* && make
+	rm -rf cp test_code/* tmp/* && make

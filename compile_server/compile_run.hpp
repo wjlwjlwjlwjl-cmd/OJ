@@ -51,6 +51,40 @@ private:
         }
         return reason;
     }
+
+    static void remove_tmp(const std::string& filename)
+    {
+        std::string src_file = oj_utils::name_utils::Src(filename);
+        std::string err_file = oj_utils::name_utils::CompileError(filename);
+        std::string exe_file = oj_utils::name_utils::Exe(filename);
+        std::string run_err_file = oj_utils::name_utils::RunError(filename);
+        std::string stdin_file = oj_utils::name_utils::Stdin(filename);
+        std::string stdout_file = oj_utils::name_utils::Stdout(filename);
+        if(oj_utils::file_utils::cp_success(src_file))
+        {
+            unlink(src_file.c_str());
+        }
+        if(oj_utils::file_utils::cp_success(err_file))
+        {
+            unlink(err_file.c_str());
+        }
+        if(oj_utils::file_utils::cp_success(exe_file))
+        {
+            unlink(exe_file.c_str());
+        }
+        if(oj_utils::file_utils::cp_success(run_err_file))
+        {
+            unlink(run_err_file.c_str());
+        }
+        if(oj_utils::file_utils::cp_success(stdin_file))
+        {
+            unlink(stdin_file.c_str());
+        }
+        if(oj_utils::file_utils::cp_success(stdout_file))
+        {
+            unlink(stdout_file.c_str());
+        }
+    }
 public:
     static void compile_and_run(const std::string& in_string, std::string& out_string)
     {
@@ -99,6 +133,8 @@ public:
         out_json["stderr"] = stderr;
         Json::StyledWriter writer;
         out_string = writer.write(out_json);
+
+        remove_tmp(filename);
     }
 private:
 };
