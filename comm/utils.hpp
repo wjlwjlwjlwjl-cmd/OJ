@@ -37,9 +37,9 @@ namespace oj_utils
                 ss << std::setw(2) << std::setfill('0') << std::hex << distribution(mt);
             }
 
-            std::atomic<int> ato(0);
+            static std::atomic<int> ato(0);
             int tmp = ato.fetch_add(1);
-            ss << "-" << std::setw(4) << std::setfill('0') << ato;
+            ss << "-" << std::setw(4) << std::setfill('0') << std::hex << tmp;
             DEBUG("uniq file name {}", ss.str());
             return ss.str();
         }

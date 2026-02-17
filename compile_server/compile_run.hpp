@@ -32,20 +32,23 @@ private:
             oj_utils::file_utils::read_file(oj_utils::name_utils::CompileError(filename), message, true);
             reason = "compile error: " + message;
             break;
-        case 2:
-            oj_utils::file_utils::read_file(oj_utils::name_utils::RunError(filename), message, true);
-            if(message.empty())
-            {
-                message = "Segmentation fault (core dumped)";
-            }
-            reason = "run error: " + message;
-            break;
         case -1:
             reason = "write into src fail";
             break;
         case -2:
             reason = "read stdout or stderr fail";
             break;
+        case 24:
+            reason = "runtime error";
+            break;
+        case 8:
+            reason = "devided by zero";
+            break;
+        case 11:
+            reason = "invalid pointer or stack overflow, null pointer";
+            break;
+        case 6:
+            reason = "invalid free or assert fail";
         default:
             reason = "Unknown error";
         }
@@ -114,9 +117,8 @@ public:
             status = 1;
             goto END;
         }
-        if(Runner::run(filename, cpu_limit, mem_limit) != 0)
+        if((status = Runner::run(filename, cpu_limit, mem_limit)) != 0)
         {
-            status = 2;
             goto END;
         }
         
@@ -133,6 +135,7 @@ public:
         out_json["stderr"] = stderr;
         Json::StyledWriter writer;
         out_string = writer.write(out_json);
+        DEBUG("output:\n{}", out_string);
 
         remove_tmp(filename);
     }
