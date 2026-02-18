@@ -11,6 +11,9 @@
 class Problem
 {
 public:
+    Problem()
+    {}
+
     Problem(int number, const std::string& title, const std::string& star, const std::string& desc, 
         const std::string& header, const std::string& tail,
         int cpu_limit = 1, int mem_limit = 5000)
@@ -23,6 +26,18 @@ public:
         , _cpu_limit(cpu_limit)
         , _mem_limit(mem_limit)
     {}
+
+    //Problem(Problem& prob)
+        //: _number(prob.number())
+        //, _title(prob.title()) 
+        //, _star(prob.star())
+        //, _desc(prob.desc())
+        //, _header(prob.header())
+        //, _tail(prob.tail())
+        //, _cpu_limit(prob.cpu_limit())
+        //, _mem_limit(prob.mem_limit())
+    //{}
+
     int number()
     {
         return _number;
