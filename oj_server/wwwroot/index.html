@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>这是oj平台</title>
+    <style>
+        body{
+            background-color: darkslategray;
+        }
+        * {
+            /*几乎所有网页开发都有这个步骤*/
+            margin: 0px; /*消除默认外边距*/
+            padding: 0px; /*消除默认内边距*/
+        }
+        html, body{
+            width:100%;
+            height:100%;
+        }
+        .container .content{
+            width: 800px;
+            background-color: green;
+            margin:0px auto;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .container .content .font{
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h2>这是一个oj平台</h2>
-    <label style="color:red">这是测试首页</label>
-    <a href="/all_questions">点此跳转至题目展示页面</a>
-    <a href="/question/1">点击此跳转至题目一</a>
-    <a href="/question/2">点击此跳转至题目二</a>
+    <div class="container">
+        <!--nav bar-->
+        <div class="nav">
+
+        </div>
+        <!--content-->
+        <div class="content">
+            <label style="color:red">这是测试首页<br></label>
+            <a href="/all_questions" style="color:white" class="font">点此跳转至题目展示页面<br></a>
+            <a href="/question/1" style="color:white" class="font">点击此跳转至题目一<br></a>
+            <a href="/question/2" style="color:white" class="font">点击此跳转至题目二<br></a>
+        </div>
+    </div>
 </body>
 </html>

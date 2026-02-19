@@ -201,7 +201,6 @@ public:
 
     void judge(int number, const std::string& in_string, std::string& out_string)
     {
-        mtx.lock();
         auto prob = _pt->SelectOne(number);
         Json::Reader reader;
         Json::Value value;
@@ -250,10 +249,8 @@ public:
                 break;
             }
         }
-        mtx.unlock();
     }
 private:
     std::shared_ptr<ProblemTable> _pt;
     LoadBalance lb;
-    std::mutex mtx;
 };
