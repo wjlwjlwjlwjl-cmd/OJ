@@ -33,11 +33,11 @@ public:
             umask(0); // avoid the influence of the platform
             if(errfd < 0)
             {
-                ERROR("errfile generate fail {}", filename);
+                ERROR("errfile generate fail {}", err_file);
                 return false;
             }
             dup2(errfd, 2);
-            execlp("g++", "g++", src_file.c_str(), "-o", exe_file.c_str(), "-std=c++11", nullptr);
+            execlp("g++", "g++", src_file.c_str(), "-o", exe_file.c_str(), "-std=c++11", "-static", nullptr);
             close(errfd);
             exit(1);
         }
