@@ -104,22 +104,21 @@ public:
         mtx.lock();
         if(_machines.size() == 0)
         {
-            ERROR("all of the compile server died!!!!!!!!!!!!");
+            ERROR("no compile server prepared!!!!!!!!!!!!");
             return false;
         }
-        //polling
-        // int choice = 0;
-        // for(int i = 0; i < _machines.size(); i++)
-        // {
-        //     if(_machines[i]._online)
-        //     {
-        //         if(_machines[choice]._load > _machines[i]._load)
-        //         {
-        //             choice = i;
-        //         }
-        //     }
-        // }
+        int count = 0;
+        again:
+        if(count == _machines.size() && count != 0)
+        {
+            ERROR("all of the compile server died!!!!!!!!!!!!");
+        }
         int choice = rand() % _machines.size();
+        if(_machines[choice]._online == false)
+        {
+            count++;
+            goto again;
+        }
         *m = &_machines[choice];
         std::cout << "**********the choice is " << choice << std::endl;
         mtx.unlock();
@@ -143,8 +142,29 @@ public:
         return false;
     }
 
-    bool Online()
+    bool OnlineNew()
     {
+        //when all of the host are ready again, use this function to add all of them
+        //to the prepared host list;
+        mtx.lock();
+        _machines.clear();
+        if(!Load())
+        {
+            ERROR("make all host online fail");
+            return false;
+        }
+        mtx.unlock();
+        return true;
+    }
+
+    bool OnlineRepaired()
+    {
+        mtx.lock();
+        for(auto &e: _machines)
+        {
+            e._online = true;
+        }
+        mtx.unlock();
         return true;
     }
 

@@ -6,17 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{number}}.{{title}}</title>
-    <!-- 引入ACE插件 -->
-    <!-- 官网链接：https://ace.c9.io/ -->
-    <!-- CDN链接：https://cdnjs.com/libraries/ace -->
-    <!-- 使用介绍：https://www.iteye.com/blog/ybc77107-2296261 -->
-    <!-- https://justcode.ikeepstudying.com/2016/05/ace-editor-%E5%9C%A8%E7%BA%BF%E4%BB%A3%E7%A0%81%E7%BC%96%E8%BE%91%E6%9E%81%E5%85%B6%E9%AB%98%E4%BA%AE/ -->
-    <!-- 引入ACE CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript"
         charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ext-language_tools.js" type="text/javascript"
         charset="utf-8"></script>
-    <!-- 引入jquery CDN -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 
     <style>
@@ -178,7 +171,7 @@
         });
         //submit the content
         function submit(){
-            alert("[调试]，已提交代码!");
+            //alert("[调试]，已提交代码!");
             var code = editor.getSession().getValue();
             var number = $(".container .part1 .left_desc h1 #number").text();
             var judge_url = "/judge/" + number;

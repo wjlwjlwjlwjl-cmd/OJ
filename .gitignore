@@ -11,3 +11,4 @@ manage
 *.sql
 *-odb*
 search
+output
