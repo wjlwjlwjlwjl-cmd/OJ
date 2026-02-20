@@ -2,6 +2,7 @@
 #include <spdlog/spdlog.h>
 #include <spdlog/logger.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
+#include <spdlog/async.h>
 
 std::shared_ptr<spdlog::logger> default_logger;
 
@@ -10,7 +11,7 @@ std::shared_ptr<spdlog::logger> default_logger;
 
 void init_logger()
 {
-    default_logger = spdlog::stdout_color_mt("default_logger");
+    default_logger = spdlog::stdout_color_st<spdlog::async_factory>("default_logger");
     default_logger->set_level(spdlog::level::level_enum::trace);
     default_logger->flush_on(spdlog::level::level_enum::trace);
     default_logger->set_pattern("[%n][%H:%M:%S][%t][%-8l] %v");

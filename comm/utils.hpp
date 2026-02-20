@@ -119,4 +119,19 @@ namespace oj_utils
             return pathname;
         }
     };
+
+    class string_utils
+    {
+    public:
+        static void StringSplit(std::vector<std::string>& carrier, const std::string& str, const char sep)
+        {
+            std::string buff;
+            std::stringstream ss(str);
+            while(std::getline(ss, buff, sep))
+            {
+                carrier.push_back(buff);
+            }
+        }
+    private:
+    };
 }

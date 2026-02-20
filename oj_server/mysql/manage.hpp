@@ -1,7 +1,7 @@
 #pragma once
-#include "./mysql/problem.hxx"
-#include "./mysql/problem-odb.hxx"
-#include "../comm/Logger.hpp"
+#include "problem.hxx"
+#include "problem-odb.hxx"
+#include "../../comm/Logger.hpp"
 
 #include <odb/mysql/database.hxx>
 #include <odb/database.hxx>
@@ -12,9 +12,6 @@ using namespace odb;
 class ProblemTable
 {
 public:
-    ProblemTable()
-    {}
-
     ProblemTable(const std::shared_ptr<odb::core::database> db)
         : _db(db)
     {}
@@ -35,7 +32,7 @@ public:
         return true;
     }
 
-    std::shared_ptr<Problem> SelectOne(int number)
+    std::shared_ptr<Problem> selectOne(const std::string& title)
     {
         std::shared_ptr<Problem> ret;
         try
@@ -43,12 +40,12 @@ public:
             odb::transaction trans(_db->begin());
             typedef odb::query<Problem> query;
             typedef odb::result<Problem> result;
-            ret.reset(_db->query_one<Problem>(query::number == number));
+            ret.reset(_db->query_one<Problem>(query::title == title));
             trans.commit();
         }
         catch(const std::exception& e)
         {
-            DEBUG("{} select one fail {}", number, e.what());
+            DEBUG("{} select one fail {}", title, e.what());
             return nullptr;
         }
         return ret;

@@ -1,0 +1,2 @@
+# problem 1
+#include <iostream>\n #include <vector>\n #include <unordered_map>\n #include <cassert>\n using namespace std;\n class Solution {\n public:\n     vector<int> twoSum(vector<int>& nums, int target) {\n unordered_map<int, int> hash;\n for(int i = 0; i < nums.size(); i++){\n int x = target - nums[i];\nif(hash.count(x) != 0){\n return {hash[x], i};}\n hash[nums[i]] = i;}\nreturn {-1, -1};}\n};

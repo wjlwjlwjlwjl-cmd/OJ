@@ -7,3 +7,7 @@ tmp
 cs
 test_code
 oj
+manage
+*.sql
+*-odb*
+search
