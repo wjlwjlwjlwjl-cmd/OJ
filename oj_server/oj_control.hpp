@@ -178,6 +178,9 @@ public:
         std::vector<Problem> probs;
         if(_pt->SelectAll(probs))
         {
+            std::sort(probs.begin(), probs.end(), [](Problem& p1, Problem& p2){
+                return (p1.number()) < (p2.number());
+            });
             ProblemView::ExpandAllQuestion(html, probs);
         }
         else
