@@ -21,3 +21,11 @@ async function apiGet(path) {
 async function apiPost(path, body) {
     return api('POST', path, body);
 }
+
+async function apiPut(path, body) {
+    return api('PUT', path, body);
+}
+
+async function apiDelete(path) {
+    return api('DELETE', path);
+}

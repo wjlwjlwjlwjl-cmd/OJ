@@ -18,8 +18,13 @@ add_executable(oj-backend
     src/utils/logger.cpp
     src/db/connection.cpp
     src/models/user.cpp
+    src/models/problem.cpp
     src/middleware/session.cpp
     src/controllers/auth_controller.cpp
+    src/controllers/problem_controller.cpp
+    src/models/submission.cpp
+    src/controllers/submission_controller.cpp
+    src/judge_client.cpp
 )
 
 target_include_directories(oj-backend PRIVATE

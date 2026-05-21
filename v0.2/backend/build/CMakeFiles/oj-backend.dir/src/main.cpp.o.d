@@ -349,6 +349,7 @@ CMakeFiles/oj-backend.dir/src/main.cpp.o: \
  /home/wang/oj/v0.2/backend/src/middleware/session.h \
  /usr/include/c++/15/optional \
  /home/wang/oj/v0.2/backend/src/middleware/../models/user.h \
+ /home/wang/oj/v0.2/backend/src/judge_client.h \
  /home/wang/oj/v0.2/backend/src/utils/logger.h \
  /home/wang/oj/v0.2/backend/src/db/connection.h \
  /usr/include/mysql/mysql.h \

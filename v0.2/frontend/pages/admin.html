@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - OJ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-accent">&lt;</span>OJ<span class="brand-accent">/&gt;</span>
+            </a>
+            <div class="navbar-links">
+                <a href="problems.html">Problems</a>
+                <a href="submissions.html">Submissions</a>
+                <a href="admin.html" style="color:var(--accent-blue);">Admin</a>
+                <span class="navbar-user">
+                    <span id="username-display"></span>
+                    <a href="#" onclick="logout()" style="font-size:13px;">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="admin-page">
+        <div class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <div class="admin-header-actions">
+                <button onclick="showCreateForm()" class="btn">+ New Problem</button>
+            </div>
+        </div>
+
+        <div class="admin-content">
+            <div class="admin-sidebar">
+                <h3>Problems</h3>
+                <div id="problem-list"></div>
+            </div>
+
+            <div class="admin-main">
+                <div id="form-container" style="display:none;">
+                    <h2 id="form-title">Create Problem</h2>
+                    <form id="problem-form" onsubmit="event.preventDefault(); saveProblem();">
+                        <input type="hidden" id="problem-id">
+                        <div class="form-group">
+                            <label for="title">Title *</label>
+                            <input type="text" id="title" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="difficulty">Difficulty</label>
+                            <select id="difficulty">
+                                <option value="easy">Easy</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="hard">Hard</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="time_limit">Time Limit (ms)</label>
+                                <input type="number" id="time_limit" value="1000" min="100" max="10000">
+                            </div>
+                            <div class="form-group">
+                                <label for="memory_limit">Memory Limit (MB)</label>
+                                <input type="number" id="memory_limit" value="256" min="16" max="1024">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description (Markdown)</label>
+                            <textarea id="description" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="test_cases">Test Cases (JSON array)</label>
+                            <textarea id="test_cases" rows="8">[]</textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn" id="save-btn">Save</button>
+                            <button type="button" onclick="cancelForm()" class="btn btn-secondary">Cancel</button>
+                        </div>
+                        <p id="form-message"></p>
+                    </form>
+                </div>
+                <div id="empty-state">
+                    <p>Select a problem or create a new one.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

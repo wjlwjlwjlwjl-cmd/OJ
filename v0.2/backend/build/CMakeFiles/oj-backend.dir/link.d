@@ -8,8 +8,13 @@ oj-backend: \
   CMakeFiles/oj-backend.dir/src/utils/logger.cpp.o \
   CMakeFiles/oj-backend.dir/src/db/connection.cpp.o \
   CMakeFiles/oj-backend.dir/src/models/user.cpp.o \
+  CMakeFiles/oj-backend.dir/src/models/problem.cpp.o \
   CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o \
   CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o \
+  CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o \
+  CMakeFiles/oj-backend.dir/src/models/submission.cpp.o \
+  CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o \
+  CMakeFiles/oj-backend.dir/src/judge_client.cpp.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libmysqlclient.so \
   /usr/lib/x86_64-linux-gnu/libcrypto.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
@@ -63,9 +68,19 @@ CMakeFiles/oj-backend.dir/src/db/connection.cpp.o:
 
 CMakeFiles/oj-backend.dir/src/models/user.cpp.o:
 
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.o:
+
 CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o:
 
 CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o:
+
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o:
+
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.o:
+
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o:
+
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libmysqlclient.so:
 

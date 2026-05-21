@@ -7,8 +7,21 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-accent">&lt;</span>OJ<span class="brand-accent">/&gt;</span>
+            </a>
+            <div class="navbar-links">
+                <a href="login.html" style="color:var(--accent-blue);">Login</a>
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <h1>Login</h1>
+        <h1>Welcome Back</h1>
+        <p style="color:var(--text-muted);margin-bottom:20px;font-size:14px;">Sign in to continue practicing.</p>
         <form onsubmit="event.preventDefault(); login();">
             <div class="form-group">
                 <label for="username">Username</label>
@@ -21,9 +34,11 @@
             <button type="submit" class="btn">Login</button>
         </form>
         <p id="message"></p>
-        <p>Don't have an account? <a href="register.html">Register</a></p>
-        <p><a href="../index.html">Back to Home</a></p>
+        <p style="margin-top:12px;font-size:14px;color:var(--text-muted);">
+            Don&rsquo;t have an account? <a href="register.html">Register</a>
+        </p>
     </div>
+
     <script src="../js/api.js"></script>
     <script src="../js/auth.js"></script>
 </body>

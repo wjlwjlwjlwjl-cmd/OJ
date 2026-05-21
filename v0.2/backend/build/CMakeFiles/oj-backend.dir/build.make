@@ -156,10 +156,24 @@ CMakeFiles/oj-backend.dir/src/models/user.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/models/user.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/models/user.cpp -o CMakeFiles/oj-backend.dir/src/models/user.cpp.s
 
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.o: CMakeFiles/oj-backend.dir/flags.make
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.o: /home/wang/oj/v0.2/backend/src/models/problem.cpp
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/oj-backend.dir/src/models/problem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/models/problem.cpp.o -MF CMakeFiles/oj-backend.dir/src/models/problem.cpp.o.d -o CMakeFiles/oj-backend.dir/src/models/problem.cpp.o -c /home/wang/oj/v0.2/backend/src/models/problem.cpp
+
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oj-backend.dir/src/models/problem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/oj/v0.2/backend/src/models/problem.cpp > CMakeFiles/oj-backend.dir/src/models/problem.cpp.i
+
+CMakeFiles/oj-backend.dir/src/models/problem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/models/problem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/models/problem.cpp -o CMakeFiles/oj-backend.dir/src/models/problem.cpp.s
+
 CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o: CMakeFiles/oj-backend.dir/flags.make
 CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o: /home/wang/oj/v0.2/backend/src/middleware/session.cpp
 CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o -MF CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o.d -o CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o -c /home/wang/oj/v0.2/backend/src/middleware/session.cpp
 
 CMakeFiles/oj-backend.dir/src/middleware/session.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/oj-backend.dir/src/middleware/session.cpp.s: cmake_force
 CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o: CMakeFiles/oj-backend.dir/flags.make
 CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o: /home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp
 CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o -MF CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o.d -o CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o -c /home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp
 
 CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.i: cmake_force
@@ -184,6 +198,62 @@ CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp -o CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.s
 
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o: CMakeFiles/oj-backend.dir/flags.make
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o: /home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o -MF CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o.d -o CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o -c /home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp
+
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp > CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.i
+
+CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp -o CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.s
+
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.o: CMakeFiles/oj-backend.dir/flags.make
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.o: /home/wang/oj/v0.2/backend/src/models/submission.cpp
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/oj-backend.dir/src/models/submission.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/models/submission.cpp.o -MF CMakeFiles/oj-backend.dir/src/models/submission.cpp.o.d -o CMakeFiles/oj-backend.dir/src/models/submission.cpp.o -c /home/wang/oj/v0.2/backend/src/models/submission.cpp
+
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oj-backend.dir/src/models/submission.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/oj/v0.2/backend/src/models/submission.cpp > CMakeFiles/oj-backend.dir/src/models/submission.cpp.i
+
+CMakeFiles/oj-backend.dir/src/models/submission.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/models/submission.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/models/submission.cpp -o CMakeFiles/oj-backend.dir/src/models/submission.cpp.s
+
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o: CMakeFiles/oj-backend.dir/flags.make
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o: /home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o -MF CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o.d -o CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o -c /home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp
+
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp > CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.i
+
+CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp -o CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.s
+
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.o: CMakeFiles/oj-backend.dir/flags.make
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.o: /home/wang/oj/v0.2/backend/src/judge_client.cpp
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.o: CMakeFiles/oj-backend.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/oj-backend.dir/src/judge_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/oj-backend.dir/src/judge_client.cpp.o -MF CMakeFiles/oj-backend.dir/src/judge_client.cpp.o.d -o CMakeFiles/oj-backend.dir/src/judge_client.cpp.o -c /home/wang/oj/v0.2/backend/src/judge_client.cpp
+
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/oj-backend.dir/src/judge_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wang/oj/v0.2/backend/src/judge_client.cpp > CMakeFiles/oj-backend.dir/src/judge_client.cpp.i
+
+CMakeFiles/oj-backend.dir/src/judge_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/oj-backend.dir/src/judge_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wang/oj/v0.2/backend/src/judge_client.cpp -o CMakeFiles/oj-backend.dir/src/judge_client.cpp.s
+
 # Object files for target oj-backend
 oj__backend_OBJECTS = \
 "CMakeFiles/oj-backend.dir/src/main.cpp.o" \
@@ -192,8 +262,13 @@ oj__backend_OBJECTS = \
 "CMakeFiles/oj-backend.dir/src/utils/logger.cpp.o" \
 "CMakeFiles/oj-backend.dir/src/db/connection.cpp.o" \
 "CMakeFiles/oj-backend.dir/src/models/user.cpp.o" \
+"CMakeFiles/oj-backend.dir/src/models/problem.cpp.o" \
 "CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o" \
-"CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o"
+"CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o" \
+"CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o" \
+"CMakeFiles/oj-backend.dir/src/models/submission.cpp.o" \
+"CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o" \
+"CMakeFiles/oj-backend.dir/src/judge_client.cpp.o"
 
 # External object files for target oj-backend
 oj__backend_EXTERNAL_OBJECTS =
@@ -204,13 +279,18 @@ oj-backend: CMakeFiles/oj-backend.dir/src/router.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/src/utils/logger.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/src/db/connection.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/src/models/user.cpp.o
+oj-backend: CMakeFiles/oj-backend.dir/src/models/problem.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/src/middleware/session.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.o
+oj-backend: CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o
+oj-backend: CMakeFiles/oj-backend.dir/src/models/submission.cpp.o
+oj-backend: CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o
+oj-backend: CMakeFiles/oj-backend.dir/src/judge_client.cpp.o
 oj-backend: CMakeFiles/oj-backend.dir/build.make
 oj-backend: CMakeFiles/oj-backend.dir/compiler_depend.ts
 oj-backend: /usr/lib/x86_64-linux-gnu/libcrypto.so
 oj-backend: CMakeFiles/oj-backend.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable oj-backend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/wang/oj/v0.2/backend/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable oj-backend"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/oj-backend.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

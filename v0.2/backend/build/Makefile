@@ -153,6 +153,54 @@ src/controllers/auth_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/auth_controller.cpp.s
 .PHONY : src/controllers/auth_controller.cpp.s
 
+src/controllers/problem_controller.o: src/controllers/problem_controller.cpp.o
+.PHONY : src/controllers/problem_controller.o
+
+# target to build an object file
+src/controllers/problem_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.o
+.PHONY : src/controllers/problem_controller.cpp.o
+
+src/controllers/problem_controller.i: src/controllers/problem_controller.cpp.i
+.PHONY : src/controllers/problem_controller.i
+
+# target to preprocess a source file
+src/controllers/problem_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.i
+.PHONY : src/controllers/problem_controller.cpp.i
+
+src/controllers/problem_controller.s: src/controllers/problem_controller.cpp.s
+.PHONY : src/controllers/problem_controller.s
+
+# target to generate assembly for a file
+src/controllers/problem_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/problem_controller.cpp.s
+.PHONY : src/controllers/problem_controller.cpp.s
+
+src/controllers/submission_controller.o: src/controllers/submission_controller.cpp.o
+.PHONY : src/controllers/submission_controller.o
+
+# target to build an object file
+src/controllers/submission_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.o
+.PHONY : src/controllers/submission_controller.cpp.o
+
+src/controllers/submission_controller.i: src/controllers/submission_controller.cpp.i
+.PHONY : src/controllers/submission_controller.i
+
+# target to preprocess a source file
+src/controllers/submission_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.i
+.PHONY : src/controllers/submission_controller.cpp.i
+
+src/controllers/submission_controller.s: src/controllers/submission_controller.cpp.s
+.PHONY : src/controllers/submission_controller.s
+
+# target to generate assembly for a file
+src/controllers/submission_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/controllers/submission_controller.cpp.s
+.PHONY : src/controllers/submission_controller.cpp.s
+
 src/db/connection.o: src/db/connection.cpp.o
 .PHONY : src/db/connection.o
 
@@ -176,6 +224,30 @@ src/db/connection.s: src/db/connection.cpp.s
 src/db/connection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/db/connection.cpp.s
 .PHONY : src/db/connection.cpp.s
+
+src/judge_client.o: src/judge_client.cpp.o
+.PHONY : src/judge_client.o
+
+# target to build an object file
+src/judge_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/judge_client.cpp.o
+.PHONY : src/judge_client.cpp.o
+
+src/judge_client.i: src/judge_client.cpp.i
+.PHONY : src/judge_client.i
+
+# target to preprocess a source file
+src/judge_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/judge_client.cpp.i
+.PHONY : src/judge_client.cpp.i
+
+src/judge_client.s: src/judge_client.cpp.s
+.PHONY : src/judge_client.s
+
+# target to generate assembly for a file
+src/judge_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/judge_client.cpp.s
+.PHONY : src/judge_client.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -224,6 +296,54 @@ src/middleware/session.s: src/middleware/session.cpp.s
 src/middleware/session.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/middleware/session.cpp.s
 .PHONY : src/middleware/session.cpp.s
+
+src/models/problem.o: src/models/problem.cpp.o
+.PHONY : src/models/problem.o
+
+# target to build an object file
+src/models/problem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/problem.cpp.o
+.PHONY : src/models/problem.cpp.o
+
+src/models/problem.i: src/models/problem.cpp.i
+.PHONY : src/models/problem.i
+
+# target to preprocess a source file
+src/models/problem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/problem.cpp.i
+.PHONY : src/models/problem.cpp.i
+
+src/models/problem.s: src/models/problem.cpp.s
+.PHONY : src/models/problem.s
+
+# target to generate assembly for a file
+src/models/problem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/problem.cpp.s
+.PHONY : src/models/problem.cpp.s
+
+src/models/submission.o: src/models/submission.cpp.o
+.PHONY : src/models/submission.o
+
+# target to build an object file
+src/models/submission.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/submission.cpp.o
+.PHONY : src/models/submission.cpp.o
+
+src/models/submission.i: src/models/submission.cpp.i
+.PHONY : src/models/submission.i
+
+# target to preprocess a source file
+src/models/submission.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/submission.cpp.i
+.PHONY : src/models/submission.cpp.i
+
+src/models/submission.s: src/models/submission.cpp.s
+.PHONY : src/models/submission.s
+
+# target to generate assembly for a file
+src/models/submission.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-backend.dir/build.make CMakeFiles/oj-backend.dir/src/models/submission.cpp.s
+.PHONY : src/models/submission.cpp.s
 
 src/models/user.o: src/models/user.cpp.o
 .PHONY : src/models/user.o
@@ -333,15 +453,30 @@ help:
 	@echo "... src/controllers/auth_controller.o"
 	@echo "... src/controllers/auth_controller.i"
 	@echo "... src/controllers/auth_controller.s"
+	@echo "... src/controllers/problem_controller.o"
+	@echo "... src/controllers/problem_controller.i"
+	@echo "... src/controllers/problem_controller.s"
+	@echo "... src/controllers/submission_controller.o"
+	@echo "... src/controllers/submission_controller.i"
+	@echo "... src/controllers/submission_controller.s"
 	@echo "... src/db/connection.o"
 	@echo "... src/db/connection.i"
 	@echo "... src/db/connection.s"
+	@echo "... src/judge_client.o"
+	@echo "... src/judge_client.i"
+	@echo "... src/judge_client.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/middleware/session.o"
 	@echo "... src/middleware/session.i"
 	@echo "... src/middleware/session.s"
+	@echo "... src/models/problem.o"
+	@echo "... src/models/problem.i"
+	@echo "... src/models/problem.s"
+	@echo "... src/models/submission.o"
+	@echo "... src/models/submission.i"
+	@echo "... src/models/submission.s"
 	@echo "... src/models/user.o"
 	@echo "... src/models/user.i"
 	@echo "... src/models/user.s"

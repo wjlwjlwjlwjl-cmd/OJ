@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions - OJ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-accent">&lt;</span>OJ<span class="brand-accent">/&gt;</span>
+            </a>
+            <div class="navbar-links">
+                <a href="problems.html">Problems</a>
+                <a href="submissions.html" style="color:var(--accent-blue);">Submissions</a>
+                <a href="admin.html">Admin</a>
+                <span class="navbar-user">
+                    <span id="username-display"></span>
+                    <a href="#" onclick="logout()" style="font-size:13px;">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-container" id="app">
+        <div id="submission-list-view">
+            <div class="page-header">
+                <h1>Submissions</h1>
+            </div>
+
+            <div class="submission-controls">
+                <label for="status-filter">Status:</label>
+                <select id="status-filter" onchange="applyStatusFilter()">
+                    <option value="">All</option>
+                    <option value="accepted">Accepted</option>
+                    <option value="wrong_answer">Wrong Answer</option>
+                    <option value="compile_error">Compile Error</option>
+                    <option value="time_limit">Time Limit</option>
+                    <option value="memory_limit">Memory Limit</option>
+                    <option value="runtime_error">Runtime Error</option>
+                    <option value="pending">Pending</option>
+                    <option value="judging">Judging</option>
+                </select>
+            </div>
+
+            <div id="submission-list">
+                <p style="color:var(--text-secondary);">Loading...</p>
+            </div>
+            <div id="pagination-controls"></div>
+        </div>
+
+        <div id="submission-detail-view" style="display:none;">
+            <div class="page-header">
+                <a href="submissions.html" class="btn btn-secondary" style="font-size:13px;">&larr; Back</a>
+                <h1>Submission <span id="submission-id"></span></h1>
+            </div>
+
+            <div class="submission-meta">
+                <div class="meta-row">
+                    <span>Problem:</span>
+                    <a id="submission-problem-link" href="#" style="font-weight:500;"></a>
+                </div>
+                <div class="meta-row">
+                    <span>Status:</span>
+                    <span id="submission-status" style="font-weight:bold;"></span>
+                </div>
+                <div class="meta-row">
+                    <span>Score:</span>
+                    <span id="submission-score"></span>
+                </div>
+                <div class="meta-row">
+                    <span>Language:</span>
+                    <span id="submission-language"></span>
+                </div>
+                <div class="meta-row">
+                    <span>Submitted:</span>
+                    <span id="submission-time"></span>
+                </div>
+            </div>
+
+            <div id="test-results"></div>
+
+            <div class="code-block">
+                <div class="code-block-header">Submitted Code</div>
+                <pre id="submission-code" class="code-block-content"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/submission.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('id')) {
+                loadSubmissionDetail();
+            } else {
+                loadSubmissionList();
+            }
+        });
+    </script>
+</body>
+</html>

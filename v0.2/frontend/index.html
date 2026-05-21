@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Online Judge</h1>
-        <p>A personal OJ platform for practice</p>
-        <div class="actions">
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-accent">&lt;</span>OJ<span class="brand-accent">/&gt;</span>
+            </a>
+            <div class="navbar-links">
+                <a href="pages/login.html">Login</a>
+                <a href="pages/register.html">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;text-align:center;padding:24px;">
+        <h1 style="font-family:'Space Grotesk',sans-serif;font-size:48px;margin-bottom:8px;">
+            <span style="color:var(--accent-purple);">&lt;</span>Online Judge<span style="color:var(--accent-purple);">/&gt;</span>
+        </h1>
+        <p style="color:var(--text-secondary);font-size:18px;margin-bottom:32px;max-width:480px;">
+            Practice coding with challenges designed for sharpening your algorithmic skills.
+        </p>
+        <div style="display:flex;gap:12px;">
             <a href="pages/login.html" class="btn">Login</a>
-            <a href="pages/register.html" class="btn">Register</a>
+            <a href="pages/register.html" class="btn btn-secondary">Register</a>
         </div>
     </div>
 </body>

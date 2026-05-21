@@ -347,6 +347,8 @@ CMakeFiles/oj-backend.dir/src/router.cpp.o: \
  /usr/include/c++/15/bits/unordered_set.h /usr/include/c++/15/utility \
  /usr/include/c++/15/bits/stl_relops.h \
  /home/wang/oj/v0.2/backend/src/controllers/auth_controller.h \
+ /home/wang/oj/v0.2/backend/src/controllers/problem_controller.h \
+ /home/wang/oj/v0.2/backend/src/controllers/submission_controller.h \
  /home/wang/oj/v0.2/backend/src/utils/logger.h \
  /home/wang/oj/v0.2/backend/include/json.hpp /usr/include/c++/15/iterator \
  /usr/include/c++/15/bits/stream_iterator.h \

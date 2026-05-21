@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/oj-submission-test.dir/link.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/middleware/session.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/middleware/session.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/utils/logger.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/home/wang/oj/v0.2/backend/src/utils/logger.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/test_main.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/test_main.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/test_submission_controller.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/test_submission_controller.cpp.o.d"
+  "CMakeFiles/oj-submission-test.dir/test_submission_model.cpp.o"
+  "CMakeFiles/oj-submission-test.dir/test_submission_model.cpp.o.d"
+  "oj-submission-test"
+  "oj-submission-test.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/oj-submission-test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

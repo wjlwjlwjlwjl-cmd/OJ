@@ -8,6 +8,7 @@
 #include "server.h"
 #include "router.h"
 #include "middleware/session.h"
+#include "judge_client.h"
 #include "utils/logger.h"
 #include "db/connection.h"
 #include <json.hpp>
@@ -91,8 +92,17 @@ int main() {
     int sessionExpiry = config["session"].value("expiry_hours", 24);
     SessionMiddleware::init(sessionExpiry);
 
+    auto& judgeCfg = config["judge"];
+    std::string judgeHost = judgeCfg.value("host", "127.0.0.1");
+    int judgePort = judgeCfg.value("port", 9090);
+    JudgeClient::init(judgeHost, judgePort);
+    Logger::info("Judge client configured: " + judgeHost + ":" + std::to_string(judgePort));
+
     Router router(g_server);
     router.setupRoutes();
+
+    std::string frontendDir = srvCfg.value("frontend_dir", "../frontend");
+    g_server.setStaticDir("/", frontendDir);
 
     std::string host = srvCfg.value("host", "0.0.0.0");
     int port = srvCfg.value("port", 8080);

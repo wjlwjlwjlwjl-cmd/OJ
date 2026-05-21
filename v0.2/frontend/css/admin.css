@@ -1,0 +1,130 @@
+.admin-page {
+  max-width: 1200px;
+  margin: 80px auto 40px;
+  padding: 0 24px;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.admin-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+}
+
+.admin-content {
+  display: flex;
+  gap: 24px;
+}
+
+.admin-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.admin-sidebar h3 {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+#problem-list {
+  margin-top: 8px;
+}
+
+.problem-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.problem-item:hover {
+  border-color: var(--accent-blue);
+  background: var(--bg-tertiary);
+}
+
+.problem-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.problem-title {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.problem-item-actions {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.admin-main {
+  flex: 1;
+  min-width: 0;
+}
+
+#form-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+#form-container h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+#form-message {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+#empty-state {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 60px 40px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+@media (max-width: 800px) {
+  .admin-content { flex-direction: column; }
+  .admin-sidebar { width: 100%; }
+  .form-row { flex-direction: column; gap: 0; }
+}

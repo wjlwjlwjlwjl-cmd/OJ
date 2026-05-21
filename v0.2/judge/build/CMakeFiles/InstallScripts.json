@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/wang/oj/v0.2/judge/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

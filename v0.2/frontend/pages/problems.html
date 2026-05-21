@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problems - OJ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-inner">
+            <a href="../index.html" class="navbar-brand">
+                <span class="brand-accent">&lt;</span>OJ<span class="brand-accent">/&gt;</span>
+            </a>
+            <div class="navbar-links">
+                <a href="problems.html" style="color:var(--accent-blue);">Problems</a>
+                <a href="submissions.html">Submissions</a>
+                <a href="admin.html">Admin</a>
+                <span class="navbar-user">
+                    <span id="username-display"></span>
+                    <a href="#" onclick="logout()" style="font-size:13px;">Logout</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="problems-page">
+        <div class="problems-header">
+            <h1>Problems</h1>
+            <div class="problems-search">
+                <span class="search-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </span>
+                <input type="text" id="search-input" placeholder="Search problems..." oninput="filterProblems()">
+            </div>
+        </div>
+        <div id="problem-list"></div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/problems.js"></script>
+</body>
+</html>

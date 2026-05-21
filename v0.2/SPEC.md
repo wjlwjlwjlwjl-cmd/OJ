@@ -78,11 +78,11 @@ Judge Service (独立进程)
 ## 6. TODO 清单
 - [x] 1. 搭建 C++ 后端框架（cpp-httplib + MySQL 连接）
 - [x] 2. 实现用户注册/登录 + Session 中间件
-- [ ] 3. 实现题目 CRUD API 和管理员后台页面
-- [ ] 4. 实现题目列表页、题目详情页（含代码编辑器）
-- [ ] 5. 实现评测服务（独立进程，fork + execve 编译运行 + 输出比对）
-- [ ] 6. 实现提交 API + 异步轮询机制
-- [ ] 7. 实现提交记录页
+- [x] 3. 实现题目 CRUD API 和管理员后台页面
+- [x] 4. 实现题目列表页、题目详情页（含代码编辑器）
+- [x] 5. 实现评测服务（独立进程，fork + execve 编译运行 + 输出比对）+ 单元测试（28 tests）
+- [x] 6. 实现提交 API + 异步轮询机制 + 单元测试（21 tests）
+- [x] 7. 实现提交记录页
 - [ ] 8. 集成测试和基本安全防护（timeout + rlimit）
 - [x] 9. 单机部署脚本
 
@@ -227,5 +227,24 @@ oj/
 ├── config/
 │   ├── config.json
 │   └── nginx.conf
+├── test/
+│   ├── todo-01-backend-framework/  (30 tests)
+│   ├── todo-02-auth/               (42 tests)
+│   ├── todo-05-judge/              (28 tests)
+│   ├── todo-06-submission-api/     (21 tests)
+│   │   ├── README.md
+│   │   ├── CMakeLists.txt
+│   │   ├── test_main.cpp
+│   │   ├── test_runner.cpp
+│   │   ├── test_sandbox.cpp
+│   │   └── test_judge_server.cpp
+│   ├── ...
+│   └── build/
+├── sql/
+│   ├── init.sql
+│   └── seed.sql
+├── scripts/
+│   ├── start.sh
+│   └── init_db.sh
 └── README.md
 ```
