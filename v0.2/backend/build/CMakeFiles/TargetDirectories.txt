@@ -1,0 +1,3 @@
+/home/wang/oj/v0.2/backend/build/CMakeFiles/oj-backend.dir
+/home/wang/oj/v0.2/backend/build/CMakeFiles/edit_cache.dir
+/home/wang/oj/v0.2/backend/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,32 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/oj-auth-test.dir/link.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/middleware/session.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/middleware/session.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/utils/logger.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/utils/logger.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/test_auth_controller.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/test_auth_controller.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/test_main.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/test_main.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/test_session.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/test_session.cpp.o.d"
+  "CMakeFiles/oj-auth-test.dir/test_user_model.cpp.o"
+  "CMakeFiles/oj-auth-test.dir/test_user_model.cpp.o.d"
+  "oj-auth-test"
+  "oj-auth-test.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/oj-auth-test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -8,7 +8,7 @@
 |------|------|------|
 | 后端 | C++ + cpp-httplib | 硬性要求 |
 | 前端 | 原生 HTML + CSS + JS | 硬性要求 |
-| 数据库 | MySQL/PostgreSQL | 待选定 |
+| 数据库 | MySQL | 已选定 |
 | 评测服务 | 独立 HTTP 服务 | 与后端 REST 通信 |
 | 认证 | Session-Cookie | 用户名+密码 |
 | 部署 | 单机部署 | |
@@ -76,15 +76,15 @@ Judge Service (独立进程)
 - [x] 基本防护：超时和内存溢出被正确拦截
 
 ## 6. TODO 清单
-1. 搭建 C++ 后端框架（cpp-httplib + MySQL 连接）
-2. 实现用户注册/登录 + Session 中间件
-3. 实现题目 CRUD API 和管理员后台页面
-4. 实现题目列表页、题目详情页（含代码编辑器）
-5. 实现评测服务（独立进程，fork + execve 编译运行 + 输出比对）
-6. 实现提交 API + 异步轮询机制
-7. 实现提交记录页
-8. 集成测试和基本安全防护（timeout + rlimit）
-9. 单机部署脚本
+- [x] 1. 搭建 C++ 后端框架（cpp-httplib + MySQL 连接）
+- [x] 2. 实现用户注册/登录 + Session 中间件
+- [ ] 3. 实现题目 CRUD API 和管理员后台页面
+- [ ] 4. 实现题目列表页、题目详情页（含代码编辑器）
+- [ ] 5. 实现评测服务（独立进程，fork + execve 编译运行 + 输出比对）
+- [ ] 6. 实现提交 API + 异步轮询机制
+- [ ] 7. 实现提交记录页
+- [ ] 8. 集成测试和基本安全防护（timeout + rlimit）
+- [x] 9. 单机部署脚本
 
 ## 7. 风险与权衡
 | 权衡 | 选择 | 理由 |
@@ -94,7 +94,56 @@ Judge Service (独立进程)
 | 评测安全 | 基本防护 | 内部使用，暂时不上容器化 |
 | 单机部署 | 单体+独立评测进程 | 简化运维，后续可容器化 |
 
-## 8. 项目目录结构
+## 8. 数据库管理
+
+### 8.1 连接数据库
+
+使用 `oj` 用户登录 MySQL（密码为 `oj_password`）：
+
+```bash
+mysql -u oj -p -D oj
+# 回车后输入密码: oj_password
+```
+
+或直接在命令中指定密码：
+
+```bash
+mysql -u oj -poj_password oj
+```
+
+### 8.2 配置文件对应关系
+
+`config/config.json` 中的数据库配置：
+
+```json
+{
+  "db": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "oj",
+    "password": "oj_password",
+    "database": "oj"
+  }
+}
+```
+
+### 8.3 常用查询
+
+```sql
+-- 查看所有用户
+SELECT id, username, role FROM users;
+
+-- 查看所有题目
+SELECT id, title, difficulty FROM problems;
+
+-- 查看提交记录
+SELECT id, user_id, problem_id, status, score FROM submissions;
+
+-- 查看某用户的所有提交
+SELECT * FROM submissions WHERE user_id = 1;
+```
+
+## 9. 项目目录结构
 
 ```
 oj/
