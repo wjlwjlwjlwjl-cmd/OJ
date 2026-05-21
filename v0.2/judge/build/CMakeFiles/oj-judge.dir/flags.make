@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/wang/oj/v0.2/judge/include -I/home/wang/oj/v0.2/judge/src
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic
 

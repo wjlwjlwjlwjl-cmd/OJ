@@ -279,5 +279,5 @@ CMakeFiles/oj-judge-test.dir/test_sandbox.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
- /usr/include/c++/15/csignal \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/c++/15/csignal \
  /home/wang/oj/v0.2/test/todo-05-judge/../../judge/src/sandbox.h

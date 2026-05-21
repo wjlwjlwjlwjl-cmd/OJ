@@ -13,6 +13,11 @@ oj-auth-test: \
   CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o \
   CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o \
   CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o \
+  CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o \
+  CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.o \
+  CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o \
+  CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.o \
+  CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.o \
   /usr/lib/x86_64-linux-gnu/libgtest.a \
   /usr/lib/x86_64-linux-gnu/libgtest_main.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libmysqlclient.so \
@@ -76,6 +81,16 @@ CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.o:
 CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o:
 
 CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o:
+
+CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o:
+
+CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.o:
+
+CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o:
+
+CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.o:
+
+CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libgtest.a:
 

@@ -27,6 +27,11 @@ add_executable(oj-auth-test
     ../../backend/src/db/connection.cpp
     ../../backend/src/server.cpp
     ../../backend/src/router.cpp
+    ../../backend/src/controllers/problem_controller.cpp
+    ../../backend/src/models/problem.cpp
+    ../../backend/src/controllers/submission_controller.cpp
+    ../../backend/src/models/submission.cpp
+    ../../backend/src/judge_client.cpp
 )
 
 target_include_directories(oj-auth-test PRIVATE

@@ -153,6 +153,54 @@ home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.s
 .PHONY : home/wang/oj/v0.2/backend/src/controllers/auth_controller.cpp.s
 
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.o: home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.o
+
+# target to build an object file
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.o
+
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.i: home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.i
+
+# target to preprocess a source file
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.i
+
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.s: home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.s
+
+# target to generate assembly for a file
+home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/problem_controller.cpp.s
+
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.o: home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.o
+
+# target to build an object file
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.o
+
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.i: home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.i
+
+# target to preprocess a source file
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.i
+
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.s: home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.s
+
+# target to generate assembly for a file
+home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/controllers/submission_controller.cpp.s
+
 home/wang/oj/v0.2/backend/src/db/connection.o: home/wang/oj/v0.2/backend/src/db/connection.cpp.o
 .PHONY : home/wang/oj/v0.2/backend/src/db/connection.o
 
@@ -177,6 +225,30 @@ home/wang/oj/v0.2/backend/src/db/connection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/db/connection.cpp.s
 .PHONY : home/wang/oj/v0.2/backend/src/db/connection.cpp.s
 
+home/wang/oj/v0.2/backend/src/judge_client.o: home/wang/oj/v0.2/backend/src/judge_client.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.o
+
+# target to build an object file
+home/wang/oj/v0.2/backend/src/judge_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.cpp.o
+
+home/wang/oj/v0.2/backend/src/judge_client.i: home/wang/oj/v0.2/backend/src/judge_client.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.i
+
+# target to preprocess a source file
+home/wang/oj/v0.2/backend/src/judge_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.cpp.i
+
+home/wang/oj/v0.2/backend/src/judge_client.s: home/wang/oj/v0.2/backend/src/judge_client.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.s
+
+# target to generate assembly for a file
+home/wang/oj/v0.2/backend/src/judge_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/judge_client.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/judge_client.cpp.s
+
 home/wang/oj/v0.2/backend/src/middleware/session.o: home/wang/oj/v0.2/backend/src/middleware/session.cpp.o
 .PHONY : home/wang/oj/v0.2/backend/src/middleware/session.o
 
@@ -200,6 +272,54 @@ home/wang/oj/v0.2/backend/src/middleware/session.s: home/wang/oj/v0.2/backend/sr
 home/wang/oj/v0.2/backend/src/middleware/session.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/middleware/session.cpp.s
 .PHONY : home/wang/oj/v0.2/backend/src/middleware/session.cpp.s
+
+home/wang/oj/v0.2/backend/src/models/problem.o: home/wang/oj/v0.2/backend/src/models/problem.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.o
+
+# target to build an object file
+home/wang/oj/v0.2/backend/src/models/problem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.cpp.o
+
+home/wang/oj/v0.2/backend/src/models/problem.i: home/wang/oj/v0.2/backend/src/models/problem.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.i
+
+# target to preprocess a source file
+home/wang/oj/v0.2/backend/src/models/problem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.cpp.i
+
+home/wang/oj/v0.2/backend/src/models/problem.s: home/wang/oj/v0.2/backend/src/models/problem.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.s
+
+# target to generate assembly for a file
+home/wang/oj/v0.2/backend/src/models/problem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/problem.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/models/problem.cpp.s
+
+home/wang/oj/v0.2/backend/src/models/submission.o: home/wang/oj/v0.2/backend/src/models/submission.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.o
+
+# target to build an object file
+home/wang/oj/v0.2/backend/src/models/submission.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.o
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.cpp.o
+
+home/wang/oj/v0.2/backend/src/models/submission.i: home/wang/oj/v0.2/backend/src/models/submission.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.i
+
+# target to preprocess a source file
+home/wang/oj/v0.2/backend/src/models/submission.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.i
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.cpp.i
+
+home/wang/oj/v0.2/backend/src/models/submission.s: home/wang/oj/v0.2/backend/src/models/submission.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.s
+
+# target to generate assembly for a file
+home/wang/oj/v0.2/backend/src/models/submission.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oj-auth-test.dir/build.make CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/submission.cpp.s
+.PHONY : home/wang/oj/v0.2/backend/src/models/submission.cpp.s
 
 home/wang/oj/v0.2/backend/src/models/user.o: home/wang/oj/v0.2/backend/src/models/user.cpp.o
 .PHONY : home/wang/oj/v0.2/backend/src/models/user.o
@@ -405,12 +525,27 @@ help:
 	@echo "... home/wang/oj/v0.2/backend/src/controllers/auth_controller.o"
 	@echo "... home/wang/oj/v0.2/backend/src/controllers/auth_controller.i"
 	@echo "... home/wang/oj/v0.2/backend/src/controllers/auth_controller.s"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/problem_controller.o"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/problem_controller.i"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/problem_controller.s"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/submission_controller.o"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/submission_controller.i"
+	@echo "... home/wang/oj/v0.2/backend/src/controllers/submission_controller.s"
 	@echo "... home/wang/oj/v0.2/backend/src/db/connection.o"
 	@echo "... home/wang/oj/v0.2/backend/src/db/connection.i"
 	@echo "... home/wang/oj/v0.2/backend/src/db/connection.s"
+	@echo "... home/wang/oj/v0.2/backend/src/judge_client.o"
+	@echo "... home/wang/oj/v0.2/backend/src/judge_client.i"
+	@echo "... home/wang/oj/v0.2/backend/src/judge_client.s"
 	@echo "... home/wang/oj/v0.2/backend/src/middleware/session.o"
 	@echo "... home/wang/oj/v0.2/backend/src/middleware/session.i"
 	@echo "... home/wang/oj/v0.2/backend/src/middleware/session.s"
+	@echo "... home/wang/oj/v0.2/backend/src/models/problem.o"
+	@echo "... home/wang/oj/v0.2/backend/src/models/problem.i"
+	@echo "... home/wang/oj/v0.2/backend/src/models/problem.s"
+	@echo "... home/wang/oj/v0.2/backend/src/models/submission.o"
+	@echo "... home/wang/oj/v0.2/backend/src/models/submission.i"
+	@echo "... home/wang/oj/v0.2/backend/src/models/submission.s"
 	@echo "... home/wang/oj/v0.2/backend/src/models/user.o"
 	@echo "... home/wang/oj/v0.2/backend/src/models/user.i"
 	@echo "... home/wang/oj/v0.2/backend/src/models/user.s"

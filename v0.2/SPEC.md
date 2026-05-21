@@ -83,7 +83,7 @@ Judge Service (独立进程)
 - [x] 5. 实现评测服务（独立进程，fork + execve 编译运行 + 输出比对）+ 单元测试（28 tests）
 - [x] 6. 实现提交 API + 异步轮询机制 + 单元测试（21 tests）
 - [x] 7. 实现提交记录页
-- [ ] 8. 集成测试和基本安全防护（timeout + rlimit）
+- [x] 8. 集成测试和基本安全防护（timeout + rlimit）
 - [x] 9. 单机部署脚本
 
 ## 7. 风险与权衡
@@ -222,7 +222,9 @@ oj/
 │   ├── init.sql
 │   └── seed.sql
 ├── scripts/
+│   ├── build.sh
 │   ├── start.sh
+│   ├── stop.sh
 │   └── init_db.sh
 ├── config/
 │   ├── config.json
@@ -232,19 +234,15 @@ oj/
 │   ├── todo-02-auth/               (42 tests)
 │   ├── todo-05-judge/              (28 tests)
 │   ├── todo-06-submission-api/     (21 tests)
+│   ├── todo-08-integration/        (15 tests)
 │   │   ├── README.md
 │   │   ├── CMakeLists.txt
 │   │   ├── test_main.cpp
-│   │   ├── test_runner.cpp
-│   │   ├── test_sandbox.cpp
-│   │   └── test_judge_server.cpp
+│   │   └── test_integration.cpp
 │   ├── ...
 │   └── build/
 ├── sql/
 │   ├── init.sql
 │   └── seed.sql
-├── scripts/
-│   ├── start.sh
-│   └── init_db.sh
 └── README.md
 ```

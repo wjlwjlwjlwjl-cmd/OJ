@@ -1,0 +1,16 @@
+[INFO] 2026-05-22 02:55:40 OJ Backend starting...
+[INFO] 2026-05-22 02:55:40 Loaded config from: /home/wang/oj/v0.2/config/config.json
+[INFO] 2026-05-22 02:55:40 MySQL connected to 127.0.0.1:3306
+[INFO] 2026-05-22 02:55:40 Session middleware initialized, expiry: 24h
+[INFO] 2026-05-22 02:55:40 Judge client configured: 127.0.0.1:9090
+[INFO] 2026-05-22 02:55:40 Registering API routes...
+[INFO] 2026-05-22 02:55:40   Auth routes registered
+[INFO] 2026-05-22 02:55:40   Problem routes registered
+[INFO] 2026-05-22 02:55:40   Submission routes registered
+[INFO] 2026-05-22 02:55:40   Judge routes (internal, via JudgeClient)
+[INFO] 2026-05-22 02:55:40 All routes registered
+[INFO] 2026-05-22 02:55:40 Static dir mounted: / -> /home/wang/oj/v0.2/backend/build/../../frontend
+[INFO] 2026-05-22 02:55:40 Server starting on 0.0.0.0:8080
+[INFO] 2026-05-22 02:57:01 Received signal 2, shutting down...
+[INFO] 2026-05-22 02:57:01 MySQL connection closed
+[INFO] 2026-05-22 02:57:01 Server stopped

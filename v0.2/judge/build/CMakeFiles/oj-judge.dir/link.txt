@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/oj-judge.dir/link.d "CMakeFiles/oj-judge.dir/src/main.cpp.o" "CMakeFiles/oj-judge.dir/src/judge_server.cpp.o" "CMakeFiles/oj-judge.dir/src/runner.cpp.o" "CMakeFiles/oj-judge.dir/src/sandbox.cpp.o" -o oj-judge
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/oj-judge.dir/link.d "CMakeFiles/oj-judge.dir/src/main.cpp.o" "CMakeFiles/oj-judge.dir/src/judge_server.cpp.o" "CMakeFiles/oj-judge.dir/src/runner.cpp.o" "CMakeFiles/oj-judge.dir/src/sandbox.cpp.o" -o oj-judge

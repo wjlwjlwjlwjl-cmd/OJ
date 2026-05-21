@@ -1271,6 +1271,8 @@ CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o: /ho
 
 CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o: /home/wang/oj/v0.2/backend/src/router.cpp \
   /home/wang/oj/v0.2/backend/src/controllers/auth_controller.h \
+  /home/wang/oj/v0.2/backend/src/controllers/problem_controller.h \
+  /home/wang/oj/v0.2/backend/src/controllers/submission_controller.h \
   /home/wang/oj/v0.2/backend/src/router.h \
   /home/wang/oj/v0.2/backend/src/server.h \
   /home/wang/oj/v0.2/backend/src/utils/logger.h \
@@ -4711,6 +4713,8 @@ CMakeFiles/oj-auth-test.dir/test_user_model.cpp.o:
 
 /usr/include/linux/close_range.h:
 
+/home/wang/oj/v0.2/backend/src/controllers/submission_controller.h:
+
 /usr/lib/x86_64-linux-gnu/libc.so.6:
 
 /usr/include/linux/types.h:
@@ -4802,6 +4806,12 @@ CMakeFiles/oj-auth-test.dir/test_session.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
+
+/usr/include/c++/15/array:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/15/tuple:
 
@@ -5115,6 +5125,8 @@ CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/server.cpp.o:
 
 /home/wang/oj/v0.2/backend/src/router.cpp:
 
+/home/wang/oj/v0.2/backend/src/controllers/problem_controller.h:
+
 /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
 
 /home/wang/oj/v0.2/backend/src/router.h:
@@ -5156,9 +5168,3 @@ CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o:
 /usr/include/gtest/internal/custom/gtest-printers.h:
 
 /usr/include/gtest/internal/gtest-death-test-internal.h:
-
-/usr/include/c++/15/array:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:

@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/wang/oj/v0.2/backend/include -I/home/wang/oj/v0.2/backend/src -I/usr/include/mysql
 
-CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -Wpedantic
 

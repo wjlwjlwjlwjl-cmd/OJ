@@ -3,6 +3,7 @@
 #include <fstream>
 #include <sstream>
 #include <cstdlib>
+#include <unistd.h>
 #include <vector>
 
 #include "server.h"
@@ -102,6 +103,19 @@ int main() {
     router.setupRoutes();
 
     std::string frontendDir = srvCfg.value("frontend_dir", "../frontend");
+    if (frontendDir.size() > 0 && frontendDir[0] != '/') {
+        std::string exeDir = std::string("/proc/self/exe");
+        char buf[4096];
+        ssize_t len = readlink(exeDir.c_str(), buf, sizeof(buf) - 1);
+        if (len > 0) {
+            buf[len] = '\0';
+            std::string exePath(buf);
+            size_t pos = exePath.find_last_of('/');
+            if (pos != std::string::npos) {
+                frontendDir = exePath.substr(0, pos) + "/" + frontendDir;
+            }
+        }
+    }
     g_server.setStaticDir("/", frontendDir);
 
     std::string host = srvCfg.value("host", "0.0.0.0");

@@ -1276,6 +1276,8 @@ CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/models/user.cpp.o
 CMakeFiles/oj-auth-test.dir/home/wang/oj/v0.2/backend/src/router.cpp.o
  /home/wang/oj/v0.2/backend/src/router.cpp
  /home/wang/oj/v0.2/backend/src/controllers/auth_controller.h
+ /home/wang/oj/v0.2/backend/src/controllers/problem_controller.h
+ /home/wang/oj/v0.2/backend/src/controllers/submission_controller.h
  /home/wang/oj/v0.2/backend/src/router.h
  /home/wang/oj/v0.2/backend/src/server.h
  /home/wang/oj/v0.2/backend/src/utils/logger.h

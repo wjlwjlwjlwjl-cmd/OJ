@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
+#include <sys/time.h>
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/types.h>
@@ -134,7 +135,7 @@ TestResult Runner::runSingle(const std::string& exe_path,
         close(stdin_pipe[0]);
         close(stdout_pipe[1]);
 
-        Sandbox::applyLimits(time_limit_ms / 1000 + 1, memory_limit_mb);
+        Sandbox::applyLimits(time_limit_ms + 1000, memory_limit_mb);
 
         execl(exe_path.c_str(), "./solution", nullptr);
         _exit(1);
@@ -151,8 +152,8 @@ TestResult Runner::runSingle(const std::string& exe_path,
     ssize_t n;
 
     fd_set set;
-    struct timeval timeout;
-    time_t start_time = time(nullptr);
+    struct timeval timeout, start_tv;
+    gettimeofday(&start_tv, nullptr);
 
     while (true) {
         FD_ZERO(&set);
@@ -169,7 +170,11 @@ TestResult Runner::runSingle(const std::string& exe_path,
                 break;
             }
         } else if (r == 0) {
-            if (time(nullptr) - start_time > time_limit_ms / 1000 + 2) {
+            struct timeval now;
+            gettimeofday(&now, nullptr);
+            long elapsed_ms = (now.tv_sec - start_tv.tv_sec) * 1000
+                            + (now.tv_usec - start_tv.tv_usec) / 1000;
+            if (elapsed_ms > time_limit_ms + 2000) {
                 kill(pid, SIGKILL);
                 tr.status = "time_limit";
                 break;
